@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp18
+{
+    class program
+    {
+        static void Main(string[]args)
+        {
+            string str = "Vijay kumar rohit sharma";
+            string[] strArr = str.Split();
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < strArr.Length - 1;i++)
+            {
+                sb.Append(strArr[i].Substring(0, 1).ToUpper());
+                sb.Append(".");
+            }
+            sb.Append(strArr[strArr.Length - 1]);
+            Console.WriteLine(sb);
+            Console.ReadLine();
+
+        }
+    }
+}
+    
