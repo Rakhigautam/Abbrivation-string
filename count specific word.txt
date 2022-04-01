@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp18
+{
+    class program
+    {
+        static void Main(string[]args)
+        {
+             string str = "we are going to join chetu soon";
+            string[] strarr = str.Split();
+            string findstr = "join";
+            int count = 0;
+            for(int i=0;i<strarr.Length;i++)
+            {
+                if(strarr[i].ToLower()==findstr.ToLower())
+                {
+                    count++;
+                }
+            }
+
+
+            Console.WriteLine($"{findstr}find:{count}time");
+            Console.ReadLine(); 
+        }
+    }
+}
+    
